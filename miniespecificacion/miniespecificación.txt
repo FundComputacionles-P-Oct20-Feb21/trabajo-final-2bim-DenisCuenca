@@ -3,42 +3,40 @@
 3. 	bandera <-- true
 4.	d, i[0-n]
 5.	mensaje, x(70)[{a-z}, {A-Z} ,{BS}]
-5.      i, i[0-n] <-- 0
-6.      Mientras bandera entonces
-7.         << "Ingresa la cuenta que deseas crear:\n(1) para crear facebook\n(2) para crearWhatsapp\n(3) para crear telegram \n(4) paracrear Signal \n(5) para crear Instagram\n(6) para crear Flickr\n(7) para crear twitter.\n"
-8.         >> d
-9.         Depediendo_de (d) entonces
-10.           Opcion 1
-11.                crearFacebook()
-12.           Fin
-13.           Opcion 2
-14.                crearWhatsapp()
-15.           Fin
-16.           Opcion 3
-17.                crearTelegram()
-18.           Fin
-19.           Opcion 4
-20.                crearSignal()
-21.           Fin
-22.           Opcion 5
-23.                crearInstagram()
-24.           Fin
-25.           Opcion 6
-26.                crearFlickr()
-27.           Fin
-28.           Opcion 7
-29.                crearTwitter()
-30.           Fin
-31.           Fin Dependiendo_de
-32.           i <-- i + 1
-33.           <<"Ingrese 0 para no ingresar mas cuentas"
-34.           >> d
-35.           Si d== 0 entonces
-36.          	   bandera <-- false
-37.	      Fin Si
-38.     Fin mientras
-39.     mensaje <-- obtenerMensaje(i)
-40.     << mensaje	
+6.      i, i[0-n] <-- 0
+7.      Mientras bandera entonces
+8.         << "Ingresa la cuenta que deseas crear:\n(1) para crear facebook\n(2) para crearWhatsapp\n(3) para crear telegram \n(4) paracrear Signal \n(5) para crear Instagram\n(6) para crear Flickr\n(7) para crear twitter.\n"
+9.         >> d
+10.         Depediendo_de (d) entonces
+11.           Opcion 1
+12.                crearFacebook()
+13.           Fin
+14.           Opcion 2
+15.                crearWhatsapp()
+16.           Fin
+17.           Opcion 3
+18.                crearTelegram()
+19.           Fin
+20.           Opcion 4
+21.                crearSignal()
+22.           Fin
+23.           Opcion 5
+24.                crearInstagram()
+25.           Fin
+26.           Opcion 6
+27.                crearFlickr()
+28.           Fin
+29.           Opcion 7
+30.                crearTwitter()
+31.           Fin
+32.	 Opcion 0
+33. 	       m = obtenerMensaje(i)	
+34. 	       bandera = false
+35. 	       << m
+36.	 Fin 
+37.           Fin Dependiendo_de
+38.           i <-- i + 1
+39.     Fin mientras
 40. fin funcion principal
 
 41. funcion crearFacebook()
