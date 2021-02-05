@@ -1,0 +1,208 @@
+1. Inicio
+2. funcion principal()
+3. 	bandera <-- true
+4.	d, i[0-n]
+5.	mensaje, x(70)[{a-z}, {A-Z} ,{BS}]
+5.      i, i[0-n] <-- 0
+6.      Mientras bandera entonces
+7.         << "Ingresa la cuenta que deseas crear:\n(1) para crear facebook\n(2) para crearWhatsapp\n(3) para crear telegram \n(4) paracrear Signal \n(5) para crear Instagram\n(6) para crear Flickr\n(7) para crear twitter.\n"
+8.         >> d
+9.         Depediendo_de (d) entonces
+10.           Opcion 1
+11.                crearFacebook()
+12.           Fin
+13.           Opcion 2
+14.                crearWhatsapp()
+15.           Fin
+16.           Opcion 3
+17.                crearTelegram()
+18.           Fin
+19.           Opcion 4
+20.                crearSignal()
+21.           Fin
+22.           Opcion 5
+23.                crearInstagram()
+24.           Fin
+25.           Opcion 6
+26.                crearFlickr()
+27.           Fin
+28.           Opcion 7
+29.                crearTwitter()
+30.           Fin
+31.           Fin Dependiendo_de
+32.           i <-- i + 1
+33.           <<"Ingrese 0 para no ingresar mas cuentas"
+34.           >> d
+35.           Si d== 0 entonces
+36.          	   bandera <-- false
+37.	      Fin Si
+38.     Fin mientras
+39.     mensaje <-- obtenerMensaje(i)
+40.     << mensaje	
+40. fin funcion principal
+
+41. funcion crearFacebook()
+42.	n, x(50)[{a-z}, {A-Z}, {BS}]
+43.	e, i[0-n]
+44.	c, x(50)[{a-z}, {A-Z}, {BS}]
+45.	p, x(50)[{a-z}, {A-Z}, {BS}]
+46. 	correo, x(50)[{a-z}, {A-Z}, {BS}, {., @}]
+47. 	<< "Ingrese su nombre: "
+48. 	>> n
+49. 	<< "Ingrese su edad: "
+50. 	>> e
+51. 	<< "Ingrese su ciudad: "
+52. 	>> ciudad
+53. 	<< "Ingrese su país: "
+54. 	>> p
+55. 	<< "Ingrese su correo electrónico: "
+56. 	>> correo
+57. 	<< "Cuenta de facebook con los datos:\nnombre de usuario: " + n + "\nEdad: " + e + "\nCiudad: " + ciudad + "\nPaís: " + p  + "\nCorreo electrónico: " + correo
+58. Fin funcion crearFacebook
+
+59. funcion crearTwitter()
+60.	n, x(50)[{a-z}, {A-Z}, {BS}]
+61. 	name, x(50)[{a-z}, {A-Z}, {BS}]
+62. 	lname, x(50)[{a-z}, {A-Z}, {BS}]
+63.	e, i[0-n]
+64.	ciudad, x(50)[{a-z}, {A-Z}, {BS}]
+65.	p, x(50)[{a-z}, {A-Z}, {BS}]
+66.	i, x(50)[{a-z}, {A-Z}, {BS}]
+67. 	correo, x(50)[{a-z}, {A-Z}, {BS}, {., @}]
+68. 	<< "Ingrese su nombre: "
+69. 	>> n
+70. 	<< "Ingrese su nombre de usuario: "
+71. 	>> name
+72. 	<< "Ingrese su apellido: "
+73. 	>> lname
+74. 	<< "Ingrese su edad: "
+75. 	>> e
+76. 	<< "Ingrese su ciudad: "
+77. 	>> ciudad
+78. 	<< "Ingrese su país: "
+79. 	>> p
+80. 	<< "Ingrese su idioma: "
+81. 	>> i
+82. 	<< "Ingrese su correo electrónico: "
+83. 	>> correo
+84. 	<< "Cuenta de Twitter con los datos:	
+	\nnombre de usuario: " + name + "\nNombre: " + n + "\nApellido: " + lname +	
+	"\nEdad: " + e + "
+	\nCiudad: " + c + 
+	"\nPaís: " + p + "\Idioma: " + i +
+	"\nCorreo electronico: " + c + "\n"
+85. Fin funcion crearTwitter
+
+86. funcion crearWhatsapp()
+87.	n, x(50)[{a-z}, {A-Z}, {BS}]
+88.	e, i[0-n]
+89. 	phone, i[0-n]
+90.	ciudad, x(50)[{a-z}, {A-Z}, {BS}]
+91.	p, x(50)[{a-z}, {A-Z}, {BS}]
+92. 	<< "Ingrese su nombre de usuario: "
+93. 	>> n
+94. 	<< "Ingrese su número de teléfono: "
+95. 	>> phone
+96. 	<< "Ingrese su edad: "
+97. 	>> e
+98. 	<< "Ingrese su ciudad: "
+99. 	>> ciudad
+100. 	<< "Ingrese su país: "
+101. 	>> p
+102. 	<< "Cuenta de Whatsapp con los datos:	
+	\nnombre de usuario: " + n + "Número de teléfono: " + phone + 
+	"\nEdad: " + e + "
+	\nCiudad: " + ciudad + 
+	"\nPaís: " + p + "\n"
+103. Fin funcion crearWhatsapp
+
+104. funcion crearTelegram()
+105.	n, x(50)[{a-z}, {A-Z}, {BS}]
+106. 	phone, i[0-n]
+107.	ciudad, x(50)[{a-z}, {A-Z}, {BS}]
+108.	p, x(50)[{a-z}, {A-Z}, {BS}]
+109. 	area, x(50)[{a-z}, {A-Z}, {BS}]
+110. 	<< "Ingrese su nombre de usuario: "
+111. 	>> n
+112. 	<< "Ingrese su número de teléfono: "
+113. 	>> phone
+114. 	<< "Ingrese su ciudad: "
+115. 	>> ciudad
+116. 	<< "Ingrese su país: "
+117. 	>> p
+118. 	<< "Ingrese su área de interés: "
+119. 	>> area
+120. 	<< "Cuenta de telegram con los datos:	
+	\nnombre de usuario: " + n + "Número de teléfono: " + phone + 
+	"\nCiudad: " + ciudad + 
+	"\nPaís: " + p + "\nÁrea de interés: " + area + "\n"
+121. Fin funcion crearTelegram
+
+122. funcion crearSignal()
+123.	n, x(50)[{a-z}, {A-Z}, {BS}]
+124. 	phone, i[0-n]
+125.	ciudad, x(50)[{a-z}, {A-Z}, {BS}]
+126.	p, x(50)[{a-z}, {A-Z}, {BS}]
+127. 	hobby, x(50)[{a-z}, {A-Z}, {BS}]
+128. 	<< "Ingrese su nombre de usuario: "
+129. 	>> n
+130. 	<< "Ingrese su número de teléfono: "
+131. 	>> phone
+132. 	<< "Ingrese su ciudad: "
+133. 	>> ciudad
+134. 	<< "Ingrese su país: "
+135. 	>> p
+136. 	<< "Ingrese su hobby principal: "
+137. 	>> hobby
+138. 	<< "Cuenta de Signal con los datos:	
+	\nnombre de usuario: " + n + "Número de teléfono: " + phone + 
+	"\nCiudad: " + ciudad + 
+	"\nPaís: " + p + "\nHobby principal: " + hobby + "\n"
+139. Fin funcion crearSignal
+
+140. funcion crearInstagram()
+141.	n, x(50)[{a-z}, {A-Z}, {BS}]
+142.	e, i[0-n]
+143.	c, x(50)[{a-z}, {A-Z}, {BS}]
+144. 	correo, x(50)[{a-z}, {A-Z}, {BS}, {., @}]
+145. 	<< "Ingrese su nombre: "
+146. 	>> n
+147. 	<< "Ingrese su edad: "
+148. 	>> e
+149. 	<< "Ingrese su ciudad: "
+150. 	>> c
+151. 	<< "Ingrese su correo electrónico: "
+152. 	>> correo
+153. 	<< "Cuenta de Instragram con los datos:	
+	\nnombre de usuario: " + n + 	
+	"\nEdad: " + e + "
+	\nCiudad: " + ciudad + 
+	"\nCorreo electronico: " + correo + "\n" 
+154. Fin funcion crearInstagram
+
+155. funcion crearFlickr()
+156.	n, x(50)[{a-z}, {A-Z}, {BS}]
+157.	correr, x(50)[{a-z}, {A-Z}, {BS}, {_, @}]
+158.	<< "Ingrese su nombre: "
+159. 	>> n
+160.	<< "Ingrese su correo: "
+161. 	>> correo
+162. 	<< "Cuenta de Flickr con los datos: \nombre de usuario: " + n + "\nCoreo electrónico: " + c
+163. fin funcion crearFlickr
+
+164. funcion obtenerMensaje(i, i)
+165.	mensajeFinal(3) <-- {"Campaña con poca afluencia", "Campaña moderada siga adelante", "Excelente campaña"}
+166. 	Si i <= 5 entonces
+167. 		return mensajeFinal(0)
+168. 	De lo contrario
+169. 		Si i >= 6 and <= 15 entonces
+170.			return mensajeFinal(1)
+171. 		De lo contrario
+172.			Si i >= 16 entonces
+173.				return mensajeFinal(2)
+174.			Fin Si
+175.		Fin Si
+176. 	Fin Si
+177. Fin funcion obtenerMensaje
+178. Fin
+
